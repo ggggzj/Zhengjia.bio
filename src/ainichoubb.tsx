@@ -77,7 +77,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white text-black font-mono">
+    <div className="min-h-screen bg-white text-black font-sans">
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white/95 backdrop-blur-md shadow-2xl border-b border-gray-200' : 'bg-transparent'
