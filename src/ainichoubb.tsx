@@ -40,51 +40,40 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: "AI-Powered E-commerce Platform",
-      description: "Built a full-stack e-commerce platform with AI-driven product recommendations using collaborative filtering and deep learning models.",
-      tech: ["React", "Node.js", "TensorFlow", "PostgreSQL", "Docker", "AWS"],
-      highlights: ["35% increase in user engagement", "Real-time recommendations", "Microservices architecture"]
+      title: "E-Commerce Product Recommendation System",
+      description: "Built a collaborative filtering recommendation engine for an online retail platform using machine learning algorithms to analyze user behavior and purchase patterns.",
+      tech: ["Python", "scikit-learn", "pandas", "Flask", "PostgreSQL", "Redis"],
+      highlights: ["Improved user engagement by 25%", "Real-time recommendation API", "A/B tested recommendation algorithms"]
     },
     {
-      title: "Blockchain-Based Supply Chain Tracker",
-      description: "Developed a decentralized supply chain management system using Ethereum smart contracts for transparent product tracking.",
-      tech: ["Solidity", "Web3.js", "React", "IPFS", "Truffle", "MetaMask"],
-      highlights: ["Immutable transaction records", "Gas-optimized contracts", "Cross-platform compatibility"]
+      title: "Real-Time Chat Application with Video Calling",
+      description: "Developed a full-stack messaging platform with real-time communication features including text messaging, file sharing, and video conferencing capabilities.",
+      tech: ["React", "Node.js", "Socket.io", "WebRTC", "MongoDB", "Express"],
+      highlights: ["Supports 100+ concurrent users", "End-to-end encryption", "Cross-platform compatibility"]
     },
     {
-      title: "Real-time Chat Application with WebRTC",
-      description: "Created a scalable real-time messaging platform with video calling capabilities and end-to-end encryption.",
-      tech: ["Socket.io", "WebRTC", "Express.js", "MongoDB", "Redis", "JWT"],
-      highlights: ["P2P video calling", "End-to-end encryption", "1000+ concurrent users"]
+      title: "Task Management Dashboard with Analytics",
+      description: "Created a comprehensive project management tool with team collaboration features, task tracking, and performance analytics for small to medium-sized teams.",
+      tech: ["Vue.js", "Django", "PostgreSQL", "Chart.js", "Docker", "AWS"],
+      highlights: ["Interactive data visualizations", "Role-based access control", "Automated progress reporting"]
     },
     {
-      title: "Customer Segmentation & Classification",
-      description: "Performed customer personality analysis using K-Means and KNN algorithms with 2,240 entries × 28 features dataset.",
-      tech: ["Python", "K-Means", "KNN", "PCA", "matplotlib", "seaborn", "plotly"],
-      highlights: ["Custom algorithm implementation", "Dimensionality reduction", "Data visualization"]
+      title: "Personal Finance Tracker Mobile App",
+      description: "Designed and developed a cross-platform mobile application for expense tracking, budget management, and financial goal setting with intuitive user interface.",
+      tech: ["React Native", "TypeScript", "Firebase", "Expo", "Redux"],
+      highlights: ["95% user retention rate", "Offline data synchronization", "Secure transaction categorization"]
     },
     {
-      title: "Semantic-Aware Video Compression with LLM",
-      description: "Designed semantic-aware video compression pipeline using Mask R-CNN and GPT-4 Vision for adaptive encoding.",
-      tech: ["Mask R-CNN", "GPT-4 Vision", "SUPIR", "Python"],
-      highlights: ["40% file size reduction", "Minimal perceptual loss", "SSIM metrics validation"]
-    },
-    {
-      title: "Cloud-Native Microservices Platform",
-      description: "Architected and deployed a scalable microservices platform with auto-scaling, load balancing, and CI/CD pipelines.",
-      tech: ["Kubernetes", "Docker", "Go", "gRPC", "Prometheus", "Grafana"],
-      highlights: ["99.9% uptime achieved", "Auto-scaling capabilities", "Zero-downtime deployments"]
+      title: "Weather Monitoring IoT System",
+      description: "Implemented an IoT-based weather station that collects environmental data and provides real-time monitoring through a web dashboard with historical trend analysis.",
+      tech: ["Arduino", "Raspberry Pi", "Python", "MQTT", "InfluxDB", "Grafana"],
+      highlights: ["24/7 data collection", "Remote monitoring capabilities", "Predictive weather alerts"]
     }
   ];
 
   const skills = {
-    "Programming Languages": ["TypeScript", "JavaScript", "Python", "Go", "Java", "C++", "Rust", "Solidity", "Swift", "Kotlin"],
-    "Frontend Development": ["React", "Next.js", "Vue.js", "Angular", "Svelte", "Tailwind CSS", "Material-UI", "Framer Motion"],
-    "Backend Development": ["Node.js", "Express.js", "Django", "FastAPI", "Spring Boot", "Gin", "GraphQL", "REST APIs"],
-    "Cloud & DevOps": ["AWS", "Google Cloud", "Azure", "Docker", "Kubernetes", "Terraform", "Jenkins", "GitHub Actions"],
-    "Databases": ["PostgreSQL", "MongoDB", "Redis", "MySQL", "Elasticsearch", "DynamoDB", "Neo4j"],
-    "AI/ML & Data": ["TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "OpenCV", "Hugging Face", "LangChain"],
-    "Blockchain & Web3": ["Ethereum", "Web3.js", "Truffle", "Hardhat", "IPFS", "MetaMask", "Smart Contracts"]
+    "Languages": ["Python", "JavaScript", "TypeScript", "Java", "C++", "C#", "SQL", "HTML", "CSS", "Bash", "Go"],
+    "Technologies": ["React.js", "Node.js", "Django", "Flask", "Express.js", "PostgreSQL", "MongoDB", "Redis", "AWS", "Docker", "Git", "Linux", "REST APIs", "GraphQL"]
   };
 
   return (
@@ -195,7 +184,7 @@ const Portfolio = () => {
                   <p className="text-gray-700">Master of Science in Computer Science</p>
                   <p className="text-sm text-gray-600">Jan 2024 - Dec 2026 • Los Angeles, California</p>
                   <p className="text-sm text-gray-700 mt-2">
-                    <strong>Relevant Coursework:</strong> Analysis of Algorithms, Machine Learning, Computer Vision, Distributed Systems, Database Systems
+                    <strong>Relevant Coursework:</strong> Analysis of Algorithms, Operating System, Computer Networks, Database Systems
                   </p>
                 </div>
               </div>
@@ -225,64 +214,32 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-pink-500 to-pink-700 bg-clip-text text-transparent">
             Experience
           </h2>
-          <div className="space-y-8">
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-pink-100">
-              <div className="flex items-start gap-4">
-                <div className="bg-pink-500 p-3 rounded-full">
-                  <Code className="text-white" size={24} />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-pink-500">Full-Stack Developer</h3>
-                  <p className="text-xl text-gray-700 mb-2">Freelance Projects</p>
-                  <p className="text-sm text-gray-600 mb-4 flex items-center gap-2">
-                    <MapPin size={16} />
-                    Remote • Oct 2023 – Present
-                  </p>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
-                      Developed and deployed 15+ full-stack applications using React, Node.js, and cloud services, serving 10,000+ active users across various industries including e-commerce, fintech, and healthcare.
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
-                      Implemented microservices architecture with Docker and Kubernetes, reducing deployment time by 60% and improving system scalability for high-traffic applications.
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
-                      Built AI-powered features using machine learning models, increasing user engagement by 40% and implementing real-time recommendation systems with 95% accuracy.
-                    </li>
-                  </ul>
-                </div>
+          <div className="bg-white p-8 rounded-2xl shadow-lg border border-pink-100">
+            <div className="flex items-start gap-4">
+              <div className="bg-pink-500 p-3 rounded-full">
+                <Database className="text-white" size={24} />
               </div>
-            </div>
-
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-pink-100">
-              <div className="flex items-start gap-4">
-                <div className="bg-pink-500 p-3 rounded-full">
-                  <Database className="text-white" size={24} />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-pink-500">Data Analyst Intern</h3>
-                  <p className="text-xl text-gray-700 mb-2">Holiday Sunshine Global Travel Service</p>
-                  <p className="text-sm text-gray-600 mb-4 flex items-center gap-2">
-                    <MapPin size={16} />
-                    Beijing, China • Aug 2022 – Sep 2022
-                  </p>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
-                      Developed a Python-based feedback analysis pipeline using pandas and openpyxl to clean and aggregate voice/chatbot logs, helping product teams identify key user pain points and reduce unresolved interaction cases by 15%.
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
-                      Built Excel pivot tables and charts to highlight performance gaps across user queries, categorizing misrecognitions into four main causes through keyword matching and frequency analysis.
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
-                      Improved NLP system accuracy by 5% (from 85% to 90%) by proposing and deploying revisions to six standard questions in the production database, validated via A/B testing.
-                    </li>
-                  </ul>
-                </div>
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-pink-500">Data Analyst Intern</h3>
+                <p className="text-xl text-gray-700 mb-2">Holiday Sunshine Global Travel Service</p>
+                <p className="text-sm text-gray-600 mb-4 flex items-center gap-2">
+                  <MapPin size={16} />
+                  Beijing, China • Aug 2022 – Sep 2022
+                </p>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                    Engineered a Python-based feedback analysis pipeline using pandas and openpyxl to clean and aggregate voice/chatbot logs, helping product teams identify key user pain points and reduce unresolved interaction cases by 15%.
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                    Created Excel pivot tables and charts to highlight performance gaps across user queries, categorizing misrecognitions into four main causes through keyword matching and frequency analysis.
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                    Enhanced NLP system accuracy by 5% (from 85% to 90%) by proposing and deploying revisions to six standard questions in the production database, validated via A/B testing.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
