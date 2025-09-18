@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Zhengjia.bio/static/css/main.48839668.css",
+    "main.js": "/Zhengjia.bio/static/js/main.dd49421e.js",
+    "static/js/453.1791505a.chunk.js": "/Zhengjia.bio/static/js/453.1791505a.chunk.js",
+    "index.html": "/Zhengjia.bio/index.html",
+    "main.48839668.css.map": "/Zhengjia.bio/static/css/main.48839668.css.map",
+    "main.dd49421e.js.map": "/Zhengjia.bio/static/js/main.dd49421e.js.map",
+    "453.1791505a.chunk.js.map": "/Zhengjia.bio/static/js/453.1791505a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48839668.css",
+    "static/js/main.dd49421e.js"
+  ]
+}
