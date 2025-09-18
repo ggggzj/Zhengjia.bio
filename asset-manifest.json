@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Zhengjia.bio/static/css/main.48839668.css",
-    "main.js": "/Zhengjia.bio/static/js/main.dd49421e.js",
-    "static/js/453.1791505a.chunk.js": "/Zhengjia.bio/static/js/453.1791505a.chunk.js",
-    "index.html": "/Zhengjia.bio/index.html",
-    "main.48839668.css.map": "/Zhengjia.bio/static/css/main.48839668.css.map",
-    "main.dd49421e.js.map": "/Zhengjia.bio/static/js/main.dd49421e.js.map",
-    "453.1791505a.chunk.js.map": "/Zhengjia.bio/static/js/453.1791505a.chunk.js.map"
+    "main.css": "/static/css/main.48839668.css",
+    "main.js": "/static/js/main.e18d2ec1.js",
+    "static/js/453.1791505a.chunk.js": "/static/js/453.1791505a.chunk.js",
+    "index.html": "/index.html",
+    "main.48839668.css.map": "/static/css/main.48839668.css.map",
+    "main.e18d2ec1.js.map": "/static/js/main.e18d2ec1.js.map",
+    "453.1791505a.chunk.js.map": "/static/js/453.1791505a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48839668.css",
-    "static/js/main.dd49421e.js"
+    "static/js/main.e18d2ec1.js"
   ]
 }
