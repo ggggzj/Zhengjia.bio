@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  ChevronDown, 
-  Mail, 
-  Phone, 
-  Linkedin, 
-  Github, 
-  MapPin, 
+import {
+  ChevronDown,
+  Mail,
+  Linkedin,
+  Github,
+  MapPin,
   Calendar,
   Code,
   Database,
@@ -84,7 +83,7 @@ const Portfolio = () => {
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-pink-700 bg-clip-text text-transparent">
+            <div className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-pink-700 bg-clip-text text-transparent"> 
               Zhengjia Guo
             </div>
             
@@ -133,26 +132,24 @@ const Portfolio = () => {
       <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-pink-50 to-white">
         <div className="absolute inset-0 bg-gradient-to-r from-pink-100/30 to-pink-50/30"></div>
         <div className="text-center z-10 max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 bg-clip-text text-transparent animate-pulse">
+          {/* <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 bg-clip-text text-transparent animate-pulse"> */}
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 py-4 bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 bg-clip-text text-transparent animate-pulse">
+
             Zhengjia Guo
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-700">
             Full-Stack Developer & AI/ML Engineer | Building the Future with Code
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a href="mailto:zguo7940@usc.edu" className="flex items-center gap-2 bg-pink-100 text-pink-700 px-6 py-3 rounded-full hover:bg-pink-200 transition-all border border-pink-200">
+            <a href="mailto:zguo7940@usc.edu" className="flex items-center gap-2 bg-pink-100 text-black px-6 py-3 rounded-full hover:bg-pink-200 transition-all border border-pink-200">
               <Mail size={20} />
               zguo7940@usc.edu
             </a>
-            <a href="tel:3236986485" className="flex items-center gap-2 bg-gray-100 text-black px-6 py-3 rounded-full hover:bg-gray-200 transition-all border border-gray-200">
-              <Phone size={20} />
-              (323) 698-6485
-            </a>
-            <a href="https://www.linkedin.com/in/zhengjiaguo" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-pink-100 text-pink-700 px-6 py-3 rounded-full hover:bg-pink-200 transition-all border border-pink-200">
+            <a href="https://www.linkedin.com/in/zhengjiaguo" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-pink-100 text-black px-6 py-3 rounded-full hover:bg-pink-200 transition-all border border-pink-200">
               <Linkedin size={20} />
               LinkedIn
             </a>
-            <a href="https://github.com/ggggzj" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-gray-100 text-black px-6 py-3 rounded-full hover:bg-gray-200 transition-all border border-gray-200">
+            <a href="https://github.com/ggggzj" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-pink-100 text-black px-6 py-3 rounded-full hover:bg-gray-200 transition-all border border-gray-200">
               <Github size={20} />
               GitHub
             </a>
@@ -320,16 +317,11 @@ const Portfolio = () => {
           <p className="text-xl text-gray-700 mb-12">
             I'm always open to discussing new opportunities, collaborations, and innovative projects.
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <a href="mailto:zguo7940@usc.edu" className="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:border-pink-300 hover:shadow-xl transition-all group">
               <Mail className="mx-auto mb-4 text-pink-500 group-hover:scale-110 transition-transform" size={32} />
               <h3 className="font-bold mb-2 text-black">Email</h3>
               <p className="text-gray-600 text-sm">zguo7940@usc.edu</p>
-            </a>
-            <a href="tel:3236986485" className="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:border-pink-300 hover:shadow-xl transition-all group">
-              <Phone className="mx-auto mb-4 text-black group-hover:scale-110 transition-transform" size={32} />
-              <h3 className="font-bold mb-2 text-black">Phone</h3>
-              <p className="text-gray-600 text-sm">(323) 698-6485</p>
             </a>
             <a href="https://www.linkedin.com/in/zhengjiaguo" target="_blank" rel="noopener noreferrer" className="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:border-pink-300 hover:shadow-xl transition-all group">
               <Linkedin className="mx-auto mb-4 text-pink-500 group-hover:scale-110 transition-transform" size={32} />
@@ -339,7 +331,7 @@ const Portfolio = () => {
               </div>
             </a>
             <a href="https://github.com/ggggzj" target="_blank" rel="noopener noreferrer" className="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:border-pink-300 hover:shadow-xl transition-all group">
-              <Github className="mx-auto mb-4 text-black group-hover:scale-110 transition-transform" size={32} />
+              <Github className="mx-auto mb-4 text-pink-500 group-hover:scale-110 transition-transform" size={32} />
               <h3 className="font-bold mb-2 text-black">GitHub</h3>
               <div className="flex items-center justify-center gap-2 text-gray-600 text-sm">
                 Projects <ExternalLink size={14} />
