@@ -39,34 +39,40 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: "E-Commerce Product Recommendation System",
-      description: "Built a collaborative filtering recommendation engine for an online retail platform using machine learning algorithms to analyze user behavior and purchase patterns.",
-      tech: ["Python", "scikit-learn", "pandas", "Flask", "PostgreSQL", "Redis"],
-      highlights: ["Improved user engagement by 25%", "Real-time recommendation API", "A/B tested recommendation algorithms"]
+      title: "Customer Segmentation & Classification with K-Means and KNN",
+      date: "Feb 2025",
+      description: "Performed customer personality analysis using a marketing dataset (2,240 entries × 28 features), focusing on segmentation and education-level prediction.",
+      tech: ["Python","K-Means","KNN","PCA","matplotlib","seaborn","plotly"],
+      highlights: ["PCA for dimensionality reduction (28 → 2 principal components)", "K-Means clustering into 5 groups (silhouette score: 0.62)", "KNN classifier for education prediction (82% accuracy)","10+ visualizations to present insights to non-technical audiences"]
     },
     {
-      title: "Real-Time Chat Application with Video Calling",
-      description: "Developed a full-stack messaging platform with real-time communication features including text messaging, file sharing, and video conferencing capabilities.",
-      tech: ["React", "Node.js", "Socket.io", "WebRTC", "MongoDB", "Express"],
-      highlights: ["Supports 100+ concurrent users", "End-to-end encryption", "Cross-platform compatibility"]
+      title: "Semantic-Aware Video Compression with LLM-Guided Adaptive Encoding",
+      date: "Feb 2025 - May 2025",
+      description: "Devised a semantic-aware compression pipeline to reduce file sizes while preserving critical visual content under bandwidth constraints.",
+      tech: ["Python", "Mask R-CNN", "GPT-4 Vision", "SUPIR"],
+      highlights: ["Achieved 40% average file size reduction", "Preserved quality with minimal perceptual loss (SSIM metrics)", "Prioritized salient regions to enhance video clarity"]
     },
     {
-      title: "Task Management Dashboard with Analytics",
-      description: "Created a comprehensive project management tool with team collaboration features, task tracking, and performance analytics for small to medium-sized teams.",
-      tech: ["Vue.js", "Django", "PostgreSQL", "Chart.js", "Docker", "AWS"],
-      highlights: ["Interactive data visualizations", "Role-based access control", "Automated progress reporting"]
+      title: "Collaborative BIM and AR-based Support System for Building Maintenance",
+      date: "Jan 2023 - May 2025",
+      description: "Orchestrated an AR-integrated facility maintenance system as part of undergraduate thesis, aimed at solving blueprint management challenges and enhancing spatial visualization.",
+      tech: ["Unity3D", "Vuforia SDK", "C#", "AR"],
+      highlights: ["Enabled real-time 2D blueprint recognition", "Overlaid 3D pipeline models for visualization", "Integrated mobile camera for on-site operations"]
     },
     {
-      title: "Personal Finance Tracker Mobile App",
-      description: "Designed and developed a cross-platform mobile application for expense tracking, budget management, and financial goal setting with intuitive user interface.",
-      tech: ["React Native", "TypeScript", "Firebase", "Expo", "Redux"],
-      highlights: ["95% user retention rate", "Offline data synchronization", "Secure transaction categorization"]
+      title: "Research on Intelligent Robotics for Automated Warehouse Logistics",
+      date: "Mar 2022 - Sep 2022",
+      description: "Conceived and assembled an intelligent logistics robot to automate block transportation tasks in a warehouse simulation.",
+      tech: ["Python", "C", "LAB color space", "Computer Vision"],
+      highlights: ["Achieved 100% block recognition accuracy", "Reached 90% precision in grasping tasks", "Awarded First Prize for project excellence"]
     },
     {
-      title: "Weather Monitoring IoT System",
-      description: "Implemented an IoT-based weather station that collects environmental data and provides real-time monitoring through a web dashboard with historical trend analysis.",
-      tech: ["Arduino", "Raspberry Pi", "Python", "MQTT", "InfluxDB", "Grafana"],
-      highlights: ["24/7 data collection", "Remote monitoring capabilities", "Predictive weather alerts"]
+
+      title: "Research on Intelligent Environmental Control Systems for Smart Ventilation",
+      date: "Apr 2021 - Sep 2021",
+      description: "Designed an intelligent ventilation system with automated control mechanisms for energy efficiency.",
+      tech: ["Arduino", "C", "IoT", "Environmental Sensors"],
+      highlights: ["Achieved <1s response latency", "Integrated multi-input control for adaptive regulation", "Awarded First Prize for innovation"]
     }
   ];
 
