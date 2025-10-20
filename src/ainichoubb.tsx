@@ -37,7 +37,28 @@ const Portfolio = () => {
     }
   };
 
-  const projects = [
+  const currentProject = {
+    title: "Tipplers — Interactive Cocktail Map for LA",
+    subtitle: "Live Beta",
+    description: "Tipplers is an interactive web app that helps you explore Los Angeles's vibrant cocktail scene — from secret speakeasies to rooftop lounges. Built with React, TypeScript, and Vite, it blends technology, design, and nightlife into one sleek, map-driven experience.",
+    link: "https://ggggzj.github.io/Tipplers-Cocktail-Map/",
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Google Maps API"],
+    features: [
+      "🗺️ Interactive Map — Browse the city's best bars with custom markers and real-time open hours",
+      "🔍 Smart Filtering — Narrow results by price, rating, atmosphere, or cocktail types",
+      "⭐ Personalized Recommendations — Get curated suggestions based on your mood and taste",
+      "❤️ Favorites System — Save and revisit your favorite places anytime",
+      "📱 Responsive Design — Looks great on both desktop and mobile"
+    ],
+    upcoming: [
+      "🤖 Chat with an LLM to describe your ideal night out and get instant bar matches",
+      "🤝 Social Features to share favorites and meet others who love the same hidden gems",
+      "🍹 Data-Driven Insights on cocktail trends, local events, and personalized routes",
+      "✨ Hand-Drawn 'Vogue-meets-Godfather' UI — merging elegance with a playful aesthetic"
+    ]
+  };
+
+  const previousProjects = [
     {
       title: "Customer Segmentation & Classification with K-Means and KNN",
       date: "Feb 2025",
@@ -67,7 +88,6 @@ const Portfolio = () => {
       highlights: ["Achieved 100% block recognition accuracy", "Reached 90% precision in grasping tasks", "Awarded First Prize for project excellence"]
     },
     {
-
       title: "Research on Intelligent Environmental Control Systems for Smart Ventilation",
       date: "Apr 2021 - Sep 2021",
       description: "Designed an intelligent ventilation system with automated control mechanisms for energy efficiency.",
@@ -255,35 +275,107 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-pink-500 to-pink-700 bg-clip-text text-transparent">
             Projects
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
-              <div key={index} className="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:border-pink-300 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
-                <div className="flex items-start justify-between mb-4">
-                  <h3 className="text-xl font-bold text-pink-500 leading-tight">{project.title}</h3>
-                  {project.highlights.some(h => h.includes("Prize")) && (
-                    <Award className="text-yellow-500 flex-shrink-0 ml-2" size={20} />
-                  )}
+
+          {/* Now Building Section */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold mb-8 text-gray-800">Now Building</h3>
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-pink-100 hover:border-pink-300 hover:shadow-xl transition-all duration-300">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <h4 className="text-2xl font-bold text-pink-500 leading-tight">{currentProject.title}</h4>
+                  <span className="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mt-2 border border-green-200">
+                    {currentProject.subtitle}
+                  </span>
                 </div>
-                <p className="text-gray-700 mb-4 text-sm leading-relaxed">{project.description}</p>
-                <div className="mb-4">
-                  <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech, techIndex) => (
-                      <span key={techIndex} className="bg-pink-100 text-pink-700 px-2 py-1 rounded-full text-xs border border-pink-200">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+                <a
+                  href={currentProject.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600 transition-all"
+                >
+                  <ExternalLink size={16} />
+                  View Live
+                </a>
+              </div>
+
+              <p className="text-gray-700 mb-6 text-base leading-relaxed">{currentProject.description}</p>
+
+              <div className="mb-6">
+                <div className="flex flex-wrap gap-2">
+                  {currentProject.tech.map((tech, techIndex) => (
+                    <span key={techIndex} className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm border border-pink-200">
+                      {tech}
+                    </span>
+                  ))}
                 </div>
-                <div className="space-y-1">
-                  {project.highlights.map((highlight, hIndex) => (
-                    <div key={hIndex} className="flex items-center gap-2 text-sm text-gray-600">
-                      <div className="w-1.5 h-1.5 bg-pink-400 rounded-full"></div>
-                      {highlight}
+              </div>
+
+              <div className="mb-6">
+                <h5 className="text-lg font-semibold mb-3 text-gray-800">🍸 What It Does</h5>
+                <div className="space-y-2">
+                  {currentProject.features.map((feature, fIndex) => (
+                    <div key={fIndex} className="flex items-start gap-3 text-sm text-gray-700">
+                      <div className="w-1.5 h-1.5 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+                      {feature}
                     </div>
                   ))}
                 </div>
               </div>
-            ))}
+
+              <div>
+                <h5 className="text-lg font-semibold mb-3 text-gray-800">💡 What's Coming Next</h5>
+                <div className="space-y-2">
+                  {currentProject.upcoming.map((upcoming, uIndex) => (
+                    <div key={uIndex} className="flex items-start gap-3 text-sm text-gray-600">
+                      <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                      {upcoming}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-6 p-4 bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl border border-pink-100">
+                <p className="text-sm text-gray-700 italic">
+                  🚀 <strong>Vision:</strong> Tipplers isn't just a bar map — it's a bridge between AI, design, and urban discovery.
+                  My goal is to make it feel like your stylish local friend who knows every great bar in town — and helps you find your next favorite one.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Previous Projects Section */}
+          <div>
+            <h3 className="text-2xl font-bold mb-8 text-gray-800">Previous Projects</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {previousProjects.map((project, index) => (
+                <div key={index} className="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:border-pink-300 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
+                  <div className="flex items-start justify-between mb-4">
+                    <h4 className="text-xl font-bold text-pink-500 leading-tight">{project.title}</h4>
+                    {project.highlights.some(h => h.includes("Prize")) && (
+                      <Award className="text-yellow-500 flex-shrink-0 ml-2" size={20} />
+                    )}
+                  </div>
+                  <p className="text-gray-700 mb-4 text-sm leading-relaxed">{project.description}</p>
+                  <div className="mb-4">
+                    <div className="flex flex-wrap gap-2">
+                      {project.tech.map((tech, techIndex) => (
+                        <span key={techIndex} className="bg-pink-100 text-pink-700 px-2 py-1 rounded-full text-xs border border-pink-200">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="space-y-1">
+                    {project.highlights.map((highlight, hIndex) => (
+                      <div key={hIndex} className="flex items-center gap-2 text-sm text-gray-600">
+                        <div className="w-1.5 h-1.5 bg-pink-400 rounded-full"></div>
+                        {highlight}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
